@@ -1,2 +1,2 @@
-# GEMS-III
-GEMS III Summer Institute Files
+## Click [here](https://github.com/anmaikul/GEMS-III/sampledata.txt) to download sample data
+
