@@ -2,7 +2,7 @@
 """
 Created on Fri Jul 13 10:47:13 2018
 
-@author: student
+@author: Michael An
 """
 
 def find_max(number_list):
@@ -11,28 +11,13 @@ def find_max(number_list):
     for number in number_list:
         if number > max_value:
             max_value = number            
-            
+
+    return max_value
 
 
 
+# Tests for the function find_max
+test_list = [1, 2, 3, 4]
 
 
-
-
-
-
-
-
-
-
-import csv
-
-with open("./1400128.csv") as file:
-    reader = csv.DictReader(file)
-    data = [r for r in reader]
-    
-    
-temps = [(pt['DATE'], pt['DAILYMaximumDryBulbTemp'], pt['DAILYMinimumDryBulbTemp']) for pt in data if pt['DAILYMaximumDryBulbTemp'] != '']    
-    
-with open('maxtemps.txt', 'w') as file:
-    [file.write('{0}\n'.format(t[1])) for t in temps]
+print(find_max(test_list) == 1)
