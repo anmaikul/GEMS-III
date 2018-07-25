@@ -1,7 +1,7 @@
 //element.hide();
 var element = $("#pane");
 element.append('<span id="reset"> Options: <button>Clear</button>  --------         </span>');
-element.append('<span id="eraser"> <button onclick="">Eraser</button></span>');
+element.append('<span id="eraser"> <button onclick="">ERASER</button></span>');
 element.append('<span id="marker"> <button>Marker</button></span>');
 element.append('<div id="sketch" style="position:absolute; left:0;"><canvas id="paint"></canvas></div>');
 
